@@ -1,2 +1,4 @@
-*
-!.gitignore
+bazel-*
+.tags
+.tags.lock
+.tags.temp
