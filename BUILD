@@ -14,8 +14,8 @@ echo $(location //charts/test-chart:chart)
 echo \$$1
 echo \$$(rlocation $(location //charts/test-chart:chart))
 
-file \$$1 || echo missing
-file \$$(rlocation $(location //charts/test-chart:chart)) || echo missing
+ls -alh \$$1
+ls -alh \$$(rlocation $(location //charts/test-chart:chart))
 EOF""",
 )
 
