@@ -13,8 +13,8 @@ sh_binary(
         "//charts/test-chart:tarball",
     ],
     args = [
-        "$(location //charts/test-chart:tarball)",
         "$(location :gr_tarball)",
+        "$(location //charts/test-chart:tarball)",
     ],
     deps = ["@bazel_tools//tools/bash/runfiles"],
 )
