@@ -13,4 +13,3 @@ helm_chart(
     release_name = "test-release-2",
     values_yaml = "//:test_chart_values.yaml",
 )
-
