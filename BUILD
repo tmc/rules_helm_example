@@ -5,6 +5,7 @@ genrule(
     srcs = ["@com_github_tmc_rules_helm//:runfiles_bash"],
     outs = ["lstar.sh"],
     cmd = """
+echo "#!/bin/bash" > $@
 cp $(location @com_github_tmc_rules_helm//:runfiles_bash) $@
 cat <<EOF >> $@
 set -euo pipefail
