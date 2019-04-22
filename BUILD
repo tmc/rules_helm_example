@@ -20,3 +20,8 @@ helm_release(
     release_name = "test-release-3",
     values_yaml = "//:test_chart_values.yaml",
 )
+
+sh_test(
+    name = "dummy_test",
+    srcs = ["dummy_test.sh"],
+)
