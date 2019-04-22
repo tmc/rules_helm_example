@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "CURRENT_TIME $(date +%s)"
+echo "STABLE_COMMIT_SHA $(git describe --match=xxx --always --abbrev=40 --dirty))"
+echo "STABLE_USER_NAME ${USER}"
+echo "STABLE_NAMESPACE ${NAMESPACE:-${USER}}"
