@@ -5,3 +5,4 @@ rules.
 
 Examples:
 * `bazel run //:test_chart_1.install` this will install the chart defined in BUILD to the currently configured kubernetes cluster.
+* `bazel run //charts/istio:istio_init.install` and `bazel run //charts/istio:istio.install` will install Istio.

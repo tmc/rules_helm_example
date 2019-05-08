@@ -1,0 +1,20 @@
+load("@com_github_tmc_rules_helm//:helm.bzl", "helm_chart")
+
+package(default_visibility = ["//visibility:public"])
+
+helm_chart(
+    name = "istio_init",
+    srcs = glob(["install/kubernetes/helm/istio-init/**"]),
+)
+
+helm_chart(
+    name = "istio",
+    srcs = glob(["install/kubernetes/helm/istio/**"]),
+)
+
+# helm_release(
+#     name = "istio",
+#     chart = ":istio",
+#     release_name = "istio",
+#     values_yaml = "//:istio_values.yaml",
+# )
