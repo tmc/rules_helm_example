@@ -3,7 +3,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 git_repository(
     name = "com_github_tmc_rules_helm",
-    branch = "master",
+    branch = "helm3",
     remote = "https://github.com/tmc/rules_helm.git",
 )
 # local_repository(name = "com_github_tmc_rules_helm", path = "../rules_helm")
