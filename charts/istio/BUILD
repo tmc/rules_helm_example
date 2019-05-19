@@ -1,4 +1,4 @@
-load("@com_github_tmc_rules_helm//:helm.bzl", "helm_release")
+load("@com_github_tmc_rules_helm//helm:helm.bzl", "helm_release")
 
 package(default_visibility = ["//visibility:public"])
 
