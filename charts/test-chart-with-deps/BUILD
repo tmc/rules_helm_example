@@ -4,6 +4,6 @@ package(default_visibility = ["//visibility:public"])
 
 helm_chart(
     name = "chart",
-    update_deps = True,
     srcs = glob(["**"]),
+    update_deps = True,
 )

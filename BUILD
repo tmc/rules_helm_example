@@ -23,7 +23,7 @@ helm_release(
     release_name = "test-release-3",
     values = {
         "replicaCount": 2,
-    }
+    },
 )
 
 # Example showing a chart with dependencies.
